@@ -2,7 +2,7 @@
 
 ##Back-end
 
-###Installation
+### Installation
 
 In the `/be` directory run the following:  
 ```
@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ```
 
-###Usage
+### Usage
 The back-end is a standard Flask application.
 To start Flask:  
 ```
@@ -20,14 +20,14 @@ flask run
 ```
 
 
-##Front-end
-###Installation
+## Front-end
+### Installation
 In the `/charts-fe` directory run the following:  
 ```
 npm install
 ```
 
-##Usage
+## Usage
 The Front-end is a standard React application bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ```
