@@ -1,3 +1,4 @@
+import json
 import numpy
 import time
 import pandas
@@ -5,6 +6,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 from bandwidths import BANDWIDTHS
+from devices import DEVICES
 
 df = pandas.DataFrame(BANDWIDTHS)
 
@@ -13,6 +15,13 @@ df = pandas.DataFrame(BANDWIDTHS)
 def no_such_route():
     return '<h1>404.</h1>'
 
+@app.route('/devices')
+def get_devices():
+    # return json.dumps(DEVICES).encode()
+
+    response = jsonify(DEVICES)
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route('/data')
 def show_users():

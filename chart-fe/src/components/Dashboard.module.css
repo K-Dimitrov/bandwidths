@@ -8,3 +8,19 @@
     justify-content: center;
     flex-direction: column;
 }
+
+ul {
+    color: #000;
+    list-style-type: none;
+
+    position: absolute;
+    top: 0;
+    width: 40%;
+    bottom: 0;
+    left: 0;
+}
+
+ul li {
+    border: 1px solid #000;
+    height: 55px;
+}
